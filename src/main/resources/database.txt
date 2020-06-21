@@ -1,0 +1,59 @@
+-------------------------------
+create database book;
+use book;
+    CREATE TABLE book
+    (
+        id int unsigned not null auto_increment primary key,
+        isbn char(255) not null,
+        title char(255) not null,
+        autor char(255) not null,
+        category char(255) not null,
+        description char(255) not null
+    );
+
+ALTER TABLE book AUTO_INCREMENT=1;
+    select * from book;
+
+    INSERT INTO book (id, isbn, title, autor, category, description)
+    VALUES (1, 'ISN100', 'Weekend', 'Leszek Kołakowski', 'popularno-naukowa','543 str');
+    commit;
+
+    create database test;
+--------------------------------
+use test;
+    CREATE TABLE book
+    (
+        id int unsigned not null auto_increment primary key,
+        isbn char(255) not null,
+        title char(255) not null,
+        autor char(255) not null,
+        category char(255) not null,
+        description char(255) not null
+    );
+
+ALTER TABLE book AUTO_INCREMENT=1;
+    select * from book;
+
+    INSERT INTO book (id, isbn, title, autor, category, description)
+    VALUES (1, 'ISN100', 'Weekend', 'Leszek Kołakowski', 'popularno-naukowa','543 str');
+    commit;
+
+
+    create database prod;
+use prod;
+    CREATE TABLE book
+    (
+        id int unsigned not null auto_increment primary key,
+        isbn char(255) not null,
+        title char(255) not null,
+        autor char(255) not null,
+        category char(255) not null,
+        description char(255) not null
+    );
+
+ALTER TABLE book AUTO_INCREMENT=1;
+    select * from book;
+
+    INSERT INTO book (id, isbn, title, autor, category, description)
+    VALUES (1, 'ISN100', 'Weekend', 'Leszek Kołakowski', 'popularno-naukowa','543 str');
+    commit;
