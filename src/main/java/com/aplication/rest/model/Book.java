@@ -37,6 +37,7 @@ public class Book implements Serializable {
         this.category = category;
         this.description = description;
     }
+
     public Book() {
 
     }
